@@ -1,0 +1,14 @@
+# Generated reports (contain personal data)
+reports/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# IDE
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
