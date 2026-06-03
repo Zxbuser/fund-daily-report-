@@ -1,0 +1,21 @@
+# 基金每日复盘分析系统
+# 报告输出（含个人持仓数据，不上传）
+reports/
+*.docx
+*.log
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# 敏感配置
+*.env
+fund_report_task.xml
+
+# IDE
+.vscode/
+.idea/
+
+# DeepSeek MCP (独立项目，另有仓库)
+deepseek-claude-worker-mcp/
