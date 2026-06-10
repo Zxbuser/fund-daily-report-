@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "defaultMode": "dontAsk",
+    "allow": [
+      "Bash(python.exe --version)",
+      "Bash(cmd.exe /c \"where python\")",
+      "Read(//c/Users/adminmy/AppData/Local/Programs/**)",
+      "Bash(ls -d /c/Python3*/)",
+      "Read(//c/Program Files/**)",
+      "Read(//c/ProgramData/**)",
+      "Read(//c/Users/adminmy/**)",
+      "Bash(*)",
+      "Read(*)",
+      "Write(*)",
+      "Edit(*)",
+      "Glob(*)",
+      "Grep(*)",
+      "WebSearch(*)",
+      "WebFetch(*)",
+      "Skill(*)",
+      "Agent(*)",
+      "TodoWrite(*)"
+    ]
+  }
+}
