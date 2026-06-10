@@ -45,9 +45,11 @@ FUND_TWO = [
 WATCHLIST_CODES = ["016370", "006503"]
 
 # --- Email config ---
+# Recipients are read from env vars FUND_REPORT_EMAIL_ONE / FUND_REPORT_EMAIL_TWO
+# Falls back to placeholder values — edit the env vars with your actual addresses.
 RECIPIENTS = {
-    "基金一": "1569227264@qq.com",
-    "基金二": "zxb991213@qq.com",
+    "基金一": user_env("FUND_REPORT_EMAIL_ONE") or "your_email_1@example.com",
+    "基金二": user_env("FUND_REPORT_EMAIL_TWO") or "your_email_2@example.com",
 }
 SMTP_HOST = "smtp.gmail.com"
 SMTP_PORT = 587
@@ -2391,7 +2393,7 @@ def send_email(label, recipient, docx_path, codes, funds, indices, ai_consensus=
     if wl_consensus is None:
         wl_consensus = {}
 
-    user = user_env("FUND_REPORT_SMTP_USER") or "zxb991213@gmail.com"
+    user = user_env("FUND_REPORT_SMTP_USER") or "your_gmail@gmail.com"
     password = user_env("FUND_REPORT_SMTP_PASS")
     if not password:
         raise RuntimeError("FUND_REPORT_SMTP_PASS is missing")

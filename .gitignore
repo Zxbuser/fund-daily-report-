@@ -8,6 +8,13 @@ reports/
 __pycache__/
 *.pyc
 *.pyo
+*.spec
+
+# 打包输出（不上传EXE）
+dist/
+
+# PyInstaller构建目录
+build/
 
 # 敏感配置
 *.env
